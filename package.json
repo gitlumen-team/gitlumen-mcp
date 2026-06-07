@@ -1,0 +1,42 @@
+{
+  "name": "gitlumen-mcp-server",
+  "version": "1.0.0",
+  "description": "GitLumen-style MCP server for public GitHub repository and PR screening.",
+  "type": "module",
+  "private": true,
+  "bin": {
+    "gitlumen-mcp": "src/index.js"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "start:http": "node src/http.js",
+    "dev:http": "node --watch src/http.js",
+    "screen": "node src/cli.js screen",
+    "report": "node src/cli.js report",
+    "list": "node src/cli.js list",
+    "inspect": "npx @modelcontextprotocol/inspector node src/index.js",
+    "doctor": "node src/doctor.js",
+    "sample": "node src/sample.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "gitlumen",
+    "github",
+    "code-review",
+    "ai-agent"
+  ],
+  "author": "GitLumen MCP Prototype",
+  "license": "MIT",
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "zod": "^3.25.76"
+  },
+  "devDependencies": {
+    "@modelcontextprotocol/inspector": "^0.16.0"
+  }
+}

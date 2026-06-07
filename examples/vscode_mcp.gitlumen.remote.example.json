@@ -1,0 +1,11 @@
+{
+  "servers": {
+    "gitlumen-remote": {
+      "type": "http",
+      "url": "https://mcp-github-screen.gitlumen.com/mcp",
+      "headers": {
+        "Authorization": "Bearer REPLACE_WITH_MCP_AUTH_TOKEN"
+      }
+    }
+  }
+}

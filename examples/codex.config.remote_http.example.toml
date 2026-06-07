@@ -1,0 +1,8 @@
+# Copy this into ~/.codex/config.toml or .codex/config.toml
+
+[mcp_servers.gitlumen]
+url = "https://mcp.your-domain.com/mcp"
+bearer_token_env_var = "MCP_AUTH_TOKEN"
+startup_timeout_sec = 20
+tool_timeout_sec = 120
+enabled = true

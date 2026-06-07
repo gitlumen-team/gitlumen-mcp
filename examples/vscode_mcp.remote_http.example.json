@@ -1,0 +1,11 @@
+{
+  "servers": {
+    "gitlumen": {
+      "type": "http",
+      "url": "https://mcp.your-domain.com/mcp",
+      "headers": {
+        "Authorization": "Bearer YOUR_MCP_AUTH_TOKEN"
+      }
+    }
+  }
+}

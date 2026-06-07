@@ -1,0 +1,13 @@
+# Copy this into ~/.codex/config.toml or .codex/config.toml
+
+[mcp_servers.gitlumen]
+command = "node"
+args = ["/ABSOLUTE/PATH/TO/gitlumen-mcp-server/src/index.js"]
+startup_timeout_sec = 20
+tool_timeout_sec = 120
+enabled = true
+
+[mcp_servers.gitlumen.env]
+GITHUB_TOKEN = "optional_github_token_here"
+GITLUMEN_MCP_DATA_DIR = "/ABSOLUTE/PATH/TO/gitlumen-mcp-server/.gitlumen-mcp"
+GITLUMEN_MAX_FILE_BYTES = "120000"

@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "gitlumen": {
+      "command": "node",
+      "args": ["/ABSOLUTE/PATH/TO/gitlumen-mcp-server/src/index.js"],
+      "env": {
+        "GITHUB_TOKEN": "optional_github_token_here"
+      }
+    }
+  }
+}
