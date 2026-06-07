@@ -1,0 +1,25 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.gitlumen-team/gitlumen-mcp",
+  "title": "GitLumen MCP",
+  "description": "GitLumen MCP is a review intelligence server for screening public GitHub repositories and pull requests, generating risk maps, review findings, decision questions, repository structure analysis, and merge-readiness signals for AI coding agents.",
+  "version": "1.0.0",
+  "repository": {
+    "url": "https://github.com/gitlumen-team/gitlumen-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://mcp-github-screen.gitlumen.com/mcp",
+      "headers": [
+        {
+          "name": "Authorization",
+          "description": "Bearer token for GitLumen MCP access",
+          "isRequired": true,
+          "isSecret": true
+        }
+      ]
+    }
+  ]
+}
